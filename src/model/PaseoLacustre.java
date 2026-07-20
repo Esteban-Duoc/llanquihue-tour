@@ -1,0 +1,32 @@
+package model;
+
+public class PaseoLacustre extends ServicioTuristico {
+
+    private String tipoEmbarcacion;
+
+    public PaseoLacustre(String nombre, int duracionHoras, String tipoEmbarcacion) {
+        super(nombre, duracionHoras);
+        this.tipoEmbarcacion = tipoEmbarcacion;
+    }
+
+    public String getTipoEmbarcacion() {
+        return tipoEmbarcacion;
+    }
+
+    public void setTipoEmbarcacion(String tipoEmbarcacion) {
+        this.tipoEmbarcacion = tipoEmbarcacion;
+    }
+
+    @Override
+    public String mostrarResumen() {
+        return "Paseo Lacustre: " + getNombre() +
+                " | Duración: " + getDuracionHoras() +
+                " horas | Embarcación: " + tipoEmbarcacion;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                "\nTipo de embarcación: " + tipoEmbarcacion;
+    }
+}
