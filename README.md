@@ -137,3 +137,20 @@ personas.txt
 ```
 
 Contiene la información utilizada para crear automáticamente los objetos Cliente, Guía Turístico y Operador.
+
+## Clonar y ejecutar el proyecto
+
+1. Clonar el repositorio:
+
+```bash
+git clone https://github.com/Esteban-Duoc/llanquihue-tour.git
+```
+
+2. Abrir el proyecto en NetBeans o IntelliJ IDEA.
+
+3. Asegurarse de tener instalado un JDK compatible con el proyecto.
+
+4. Ejecutar:
+
+- `app.Main` para la gestión de personas.
+- `ui.Main` para la gestión de servicios turísticos.
